@@ -1,0 +1,118 @@
+body{
+  background-color: black;
+}
+.size{
+  width: 15rem;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.aMenu{
+  color: white;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-family: 'Chelsea Market';
+  font-weight: 800;
+  font-size: large;
+}
+
+.pWhere{
+ position: absolute;
+ top: 3rem;
+ right: 3rem;
+ color: white;
+ font-family: 'Chelsea Market';
+ font-weight: 800;
+}
+.hr{
+  position: relative;
+  width: 100%;
+  transform: rotate(90deg);
+  top: 13rem;
+  right: 25rem;
+}
+.divSelect{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  max-width: 100%;
+  margin-left: 30%;
+}
+.imgSelect{
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 3px 2px 1px gray;
+}
+.imgSelect:hover{
+  box-shadow: none;
+}
+.search{
+  width: 15rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  outline: none;
+}
+.filteredResult{
+  color: white;
+  
+}
+.divContent{
+  display: flex;
+  margin-left: 22rem;
+  flex-direction: column;
+}
+.ul{
+  position: relative;
+  color: white;
+  bottom: 10rem;
+  
+}
+.mobilemenu{
+  width: 3rem;
+  display: none;
+}
+.croix{
+  display: none;
+  width: 3rem;
+}
+@media (max-width: 768px) {
+  .aMenu{
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease opacity,.6s ease transform;
+  }
+  .size{
+    display: none;
+  }
+  .mobilemenu{
+    display: block;
+  }
+  .ul{
+    bottom: 0rem;
+    right: 5rem;
+    
+  }
+  .divSelect{
+    margin-top: 8rem;
+    margin-left: 10%;
+  }
+  .divContent{
+    display: flex;
+    position: relative;
+    margin-left: 10rem;
+    flex-direction: column;
+    bottom: 6rem;
+
+  }
+  .button{
+    margin-left: 2.5rem;
+  }
+  .button_album{
+    position: relative;
+    right: 2.5rem;
+  }
+}
